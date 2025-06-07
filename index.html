@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCL MSc CGVI - 计算机图形学、视觉与成像</title>
+    
+    <!-- 引入Marked.js用于Markdown解析 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+    
+    <!-- 引入外部CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    
+    <!-- 装饰粒子动画 -->
+    <div class="particles"></div>
+    
+    <nav>
+        <div class="nav-container">
+            <div class="logo" onclick="showContent('home')">UCL MSc CGVI</div>
+            
+            <!-- 移动端菜单按钮 -->
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#intro" class="nav-link" onclick="showContent('intro')">项目介绍</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#teachers" class="nav-link" onclick="showContent('teachers')">老师介绍与评价</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#courses" class="nav-link" onclick="showContent('courses')">课程资料分享</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">伦敦留学经验 ▼</a>
+                    <div class="dropdown">
+                        <a href="#preparation" class="dropdown-item" onclick="showContent('preparation')">行前准备</a>
+                        <a href="#arrival" class="dropdown-item" onclick="showContent('arrival')">落地置办</a>
+                        <a href="#shopping" class="dropdown-item" onclick="showContent('shopping')">购物</a>
+                        <a href="#dining" class="dropdown-item" onclick="showContent('dining')">餐饮</a>
+                        <a href="#transport" class="dropdown-item" onclick="showContent('transport')">交通</a>
+                        <a href="#tourism" class="dropdown-item" onclick="showContent('tourism')">旅游</a>
+                        <a href="#safety" class="dropdown-item" onclick="showContent('safety')">安全</a>
+                    </div>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="#contact" class="nav-link" onclick="showContent('contact')">联系作者</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 主页 -->
+        <div id="home" class="content active">
+            <div class="hero">
+                <h1 class="main-title">UCL MSc CGVI</h1>
+                <p class="hero-subtitle">Computer Graphics, Vision and Imaging</p>
+                <p class="hero-subtitle-cn">计算机图形学、视觉与成像硕士项目</p>
+                
+                <!-- 动态打字效果 -->
+                <div class="typing-container">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+            </div>
+            
+            <!-- 浮动装饰元素 -->
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            
+            <div class="card glass-card">
+                <h2>欢迎来到UCL MSc CGVI项目分享平台</h2>
+                <p>这是一个由UCL MSc CGVI项目毕业生创建的知识分享平台，旨在为未来的学弟学妹们提供全面的项目信息、课程资料和留学经验分享。</p>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">📚</div>
+                        <h3>课程资料</h3>
+                        <p>详细的课程介绍和学习资料</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">👨‍🏫</div>
+                        <h3>教授评价</h3>
+                        <p>真实的教授介绍和课程体验</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🌍</div>
+                        <h3>留学经验</h3>
+                        <p>伦敦生活的方方面面</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎯</div>
+                        <h3>项目指导</h3>
+                        <p>毕设选题和研究方向建议</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>快速导航</h2>
+                <div class="quick-nav">
+                    <button class="btn btn-glow" onclick="showContent('intro')">
+                        <span class="btn-icon">🎓</span>
+                        了解项目
+                    </button>
+                    <button class="btn btn-glow" onclick="showContent('teachers')">
+                        <span class="btn-icon">👨‍🏫</span>
+                        认识老师
+                    </button>
+                    <button class="btn btn-glow" onclick="showContent('courses')">
+                        <span class="btn-icon">📚</span>
+                        查看课程
+                    </button>
+                    <button class="btn btn-glow" onclick="showContent('preparation')">
+                        <span class="btn-icon">✈️</span>
+                        留学准备
+                    </button>
+                </div>
+            </div>
+
+            <!-- 统计数据展示 -->
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="30">0</div>
+                    <div class="stat-label">学生人数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="11">0</div>
+                    <div class="stat-label">核心课程</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">优秀导师</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="180">0</div>
+                    <div class="stat-label">总学分</div>
+                </div>
+            </div>
+
+            <!-- ...其他home内容 -->
+            <!-- 联系作者模块 -->
+            <div class="card contact-card" style="margin-top: 3rem;">
+                <div class="author-info">
+                    <div class="author-avatar"><img src="images/avatar.png" style="width:100%;border-radius:12px;"></img></div>
+                    <div class="author-details">
+                        <h2>作者：L.C.</h2>
+                        <p>UCL MSc CGVI 2025届毕业生</p>
+                        <div class="contact-methods">
+                            <h3>联系方式</h3>
+                            <ul>
+                            <li>邮箱：leocheng3777@gmail.com</li>
+                            <li>微信：Leonaro_Cheng37</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 项目介绍 -->
+        <div id="intro" class="content">
+            <div class="card">
+                <h1>UCL MSc CGVI 项目介绍</h1>
+                <div class="markdown-content" data-markdown="content/intro.md">
+                    <h2>基本信息</h2>
+                    <p><strong>项目全称</strong>：MSc Computer Graphics, Vision and Imaging</p>
+                    <p><strong>所属学院</strong>：Faculty of Engineering Sciences</p>
+                    <p><strong>所属部门</strong>：Department of Computer Science</p>
+                    <p><strong>项目主任</strong>：Prof Tobias Ritschel（25fall可能会有变动）</p>
+                    
+                    <h2>项目特色</h2>
+                    <p>UCL MSc CGVI是英国顶尖的计算机视觉与图形学硕士项目之一，该项目：</p>
+                    <ul>
+                        <li>涵盖计算机图形学、计算机视觉、图像处理等核心领域</li>
+                        <li>拥有世界一流的教授团队和研究设施</li>
+                        <li>提供丰富的实践机会和前沿研究项目</li>
+                        <li>毕业生就业前景广阔，可进入游戏、影视、AR/VR、医疗成像等行业</li>
+                    </ul>
+                    
+                    <h2>课程设置</h2>
+                    <p>项目为期一年，分为三个学期：</p>
+                    <ul>
+                        <li><strong>第一学期（60学分）</strong>：4门必修课程</li>
+                        <li><strong>第二学期（60学分）</strong>：从6门选修课中选择4门</li>
+                        <li><strong>第三学期（60学分）</strong>：毕业设计项目</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 老师介绍 -->
+        <div id="teachers" class="content">
+            <div class="card">
+                <h1>教授团队介绍</h1>
+                <p>UCL CGVI项目拥有世界一流的教授团队，以下是主要授课教授和毕设导师的介绍：</p>
+            </div>
+
+            <div class="teacher-grid">
+
+                <div class="teacher-card">
+                    <div class="teacher-name">Tobias Ritschel</div>
+                    <div class="teacher-field">计算机图形学 / 项目主任</div>
+                    <p>研究方向：扩散模型、渲染</p>
+                    <p>教学特点：上课活跃，会时不时延伸，难度不低。作为毕设导师比较佛系。</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-name">Gabriel Brostow</div>
+                    <div class="teacher-field">计算机视觉 / Machine Vision课程负责人</div>
+                    <p>研究方向：电影和照片特效、动作分析、创作系统</p>
+                    <p>教学特点：讲课清晰，口语流利，课堂活跃，会抽人回答问题。人很nice但回复邮件较慢。</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-name">Lourdes De Agapito Vicente</div>
+                    <div class="teacher-field">3D视觉 / Image Processing课程负责人</div>
+                    <p>研究方向：3D视觉、重构</p>
+                    <p>教学特点：讲课清楚，人很好，但各种反馈延迟较久。课程覆盖面广，给分较高。</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-name">Niloy Mitra</div>
+                    <div class="teacher-field">几何处理 / MLVC & 3D Geometry负责人</div>
+                    <p>研究方向：形状分析、数据驱动的几何处理、计算制造</p>
+                    <p>教学特点：口音较重需要适应，要求较高，比较push。</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-name">Simon Arridge</div>
+                    <div class="teacher-field">医学成像 / Inverse Problems负责人</div>
+                    <p>研究方向：医学成像中的断层扫描</p>
+                    <p>教学特点：声音较难识别，但课程结构完善，实验指导详细。人很好。</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-name">Anthony Steed</div>
+                    <div class="teacher-field">虚拟现实 / Virtual Environments负责人</div>
+                    <p>研究方向：VR、AR、新颖交互形式、大规模图形模型</p>
+                    <p>教学特点：课程偏研究导向，会邀请客座教授。VR项目有趣但时间紧张。</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-name">He Wang</div>
+                    <div class="teacher-field">计算机图形学、视觉和机器学习</div>
+                    <p>毕设导师，人很随和，可以中文交流</p>
+                    <p>研究方向：计算机图形学、视觉和机器学习的交叉领域</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-name">Kaan Aksit</div>
+                    <div class="teacher-field">计算显示</div>
+                    <p>研究方向：VR/AR计算显示、计算成像、感知图形、光学计算</p>
+                    <p>教学特点：要求较高，比较push，但对学生成长很有帮助</p>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="teacher-name">Gary Zhang</div>
+                    <div class="teacher-field">医学成像 / Computational Modelling负责人</div>
+                    <p>研究方向：医学成像、医学图像分析、计算建模和机器学习</p>
+                    <p>教学特点：课程专业性强，CW具有挑战性</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 课程主页面 -->
+        <div id="courses" class="content">
+            <div class="card">
+                <h1>课程资料分享</h1>
+                <p>以下是UCL MSc CGVI项目的全部课程，点击查看详细信息和资料分享。</p>
+            </div>
+
+            <div class="courses-section">
+                <h2>第一学期 - 必修课程</h2>
+                <div class="course-grid">
+                    <div class="course-card" onclick="showContent('comp0026')">
+                        <div class="course-code">COMP0026</div>
+                        <div class="course-name">Image Processing</div>
+                        <div class="course-info">
+                            <span class="credit">15学分</span>
+                            <span class="professor">Lourdes De Agapito</span>
+                        </div>
+                    </div>
+                    <div class="course-card" onclick="showContent('comp0027')">
+                        <div class="course-code">COMP0027</div>
+                        <div class="course-name">Computer Graphics</div>
+                        <div class="course-info">
+                            <span class="credit">15学分</span>
+                            <span class="professor">Tobias Ritschel / 王鹤</span>
+                        </div>
+                    </div>
+                    <div class="course-card" onclick="showContent('comp0137')">
+                        <div class="course-code">COMP0137</div>
+                        <div class="course-name">Machine Vision</div>
+                        <div class="course-info">
+                            <span class="credit">15学分</span>
+                            <span class="professor">Gabriel Brostow</span>
+                        </div>
+                    </div>
+                    <div class="course-card" onclick="showContent('comp0169')">
+                        <div class="course-code">COMP0169</div>
+                        <div class="course-name">Machine Learning for Visual Computing</div>
+                        <div class="course-info">
+                            <span class="credit">15学分</span>
+                            <span class="professor">Niloy Mitra & Tobias Ritschel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="courses-section">
+                <h2>第二学期 - 选修课程（6选4）</h2>
+                <div class="course-grid">
+                    <div class="course-card" onclick="showContent('comp0113')">
+                        <div class="course-code">COMP0113</div>
+                        <div class="course-name">Virtual Environments</div>
+                        <div class="course-info">
+                            <span class="credit">15学分</span>
+                            <span class="professor">Anthony Steed</span>
+                        </div>
+                    </div>
+                    <div class="course-card" onclick="showContent('comp0114')">
+                        <div class="course-code">COMP0114</div>
+                        <div class="course-name">Inverse Problems in Imaging</div>
+                        <div class="course-info">
+                            <span class="credit">15学分</span>
+                            <span class="professor">Simon Arridge</span>
+                        </div>
+                    </div>
+                    <div class="course-card" onclick="showContent('comp0118')">
+                        <div class="course-code">COMP0118</div>
+                        <div class="course-name">Computational Modelling for Biomedical Imaging</div>
+                        <div class="course-info">
+                            <span class="credit">15学分</span>
+                            <span class="professor">Gary Zhang</span>
+                        </div>
+                    </div>
+                    <div class="course-card" onclick="showContent('comp0119')">
+                        <div class="course-code">COMP0119</div>
+                        <div class="course-name">Acquisition and Processing of 3D Geometry</div>
+                        <div class="course-info">
+                            <span class="credit">15学分</span>
+                            <span class="professor">Niloy Mitra</span>
+                        </div>
+                    </div>
+                    <div class="course-card" onclick="showContent('comp0160')">
+                        <div class="course-code">COMP0160</div>
+                        <div class="course-name">Perception and Interfaces</div>
+                        <div class="course-info">
+                            <span class="credit">15学分</span>
+                            <span class="professor">Ifat Yasin</span>
+                        </div>
+                    </div>
+                    <div class="course-card" onclick="showContent('comp0161')">
+                        <div class="course-code">COMP0161</div>
+                        <div class="course-name">Auditory Computing</div>
+                        <div class="course-info">
+                            <span class="credit">15学分</span>
+                            <span class="professor">Staff</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="courses-section">
+                <h2>第三学期 - 毕业设计</h2>
+                <div class="course-grid">
+                    <div class="course-card project-card" onclick="showContent('comp0122')">
+                        <div class="course-code">COMP0122</div>
+                        <div class="course-name">MSc Computer Graphics Vision and Imaging Project</div>
+                        <div class="course-info">
+                            <span class="credit">60学分</span>
+                            <span class="professor">Individual Supervisor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 各课程详情页面 -->
+        <div id="comp0026" class="content">
+            <div class="card">
+                <button class="btn btn-secondary" onclick="showContent('courses')">← 返回课程列表</button>
+                <h1>COMP0026 - Image Processing</h1>
+                <div class="markdown-content" data-markdown="content/courses/comp0026.md">
+                    <h2>课程信息</h2>
+                    <p><strong>授课教授</strong>：Lourdes De Agapito Vicente</p>
+                    <p><strong>学分</strong>：15</p>
+                    <p><strong>评分方式</strong>：CW 20% + 实验 20% + 项目&口试 60%</p>
+                    
+                    <h2>课程内容</h2>
+                    <p>待补充...</p>
+                    
+                    <h2>学习建议</h2>
+                    <p>待补充...</p>
+                    
+                    <h2>资料分享</h2>
+                    <p>待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 其他课程页面类似 -->
+        <div id="comp0027" class="content">
+            <div class="card">
+                <button class="btn btn-secondary" onclick="showContent('courses')">← 返回课程列表</button>
+                <h1>COMP0027 - Computer Graphics</h1>
+                <div class="markdown-content" data-markdown="content/courses/comp0027.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="comp0137" class="content">
+            <div class="card">
+                <button class="btn btn-secondary" onclick="showContent('courses')">← 返回课程列表</button>
+                <h1>COMP0137 - Machine Vision</h1>
+                <div class="markdown-content" data-markdown="content/courses/comp0137.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="comp0169" class="content">
+            <div class="card">
+                <button class="btn btn-secondary" onclick="showContent('courses')">← 返回课程列表</button>
+                <h1>COMP0169 - Machine Learning for Visual Computing</h1>
+                <div class="markdown-content" data-markdown="content/courses/comp0169.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="comp0113" class="content">
+            <div class="card">
+                <button class="btn btn-secondary" onclick="showContent('courses')">← 返回课程列表</button>
+                <h1>COMP0113 - Virtual Environments</h1>
+                <div class="markdown-content" data-markdown="content/courses/comp0113.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="comp0114" class="content">
+            <div class="card">
+                <button class="btn btn-secondary" onclick="showContent('courses')">← 返回课程列表</button>
+                <h1>COMP0114 - Inverse Problems in Imaging</h1>
+                <div class="markdown-content" data-markdown="content/courses/comp0114.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="comp0118" class="content">
+            <div class="card">
+                <button class="btn btn-secondary" onclick="showContent('courses')">← 返回课程列表</button>
+                <h1>COMP0118 - Computational Modelling for Biomedical Imaging</h1>
+                <div class="markdown-content" data-markdown="content/courses/comp0118.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="comp0119" class="content">
+            <div class="card">
+                <button class="btn btn-secondary" onclick="showContent('courses')">← 返回课程列表</button>
+                <h1>COMP0119 - Acquisition and Processing of 3D Geometry</h1>
+                <div class="markdown-content" data-markdown="content/courses/comp0119.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="comp0160" class="content">
+            <div class="card">
+                <button class="btn btn-secondary" onclick="showContent('courses')">← 返回课程列表</button>
+                <h1>COMP0160 - Perception and Interfaces</h1>
+                <div class="markdown-content" data-markdown="content/courses/comp0160.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="comp0161" class="content">
+            <div class="card">
+                <button class="btn btn-secondary" onclick="showContent('courses')">← 返回课程列表</button>
+                <h1>COMP0161 - Auditory Computing</h1>
+                <div class="markdown-content" data-markdown="content/courses/comp0161.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="comp0122" class="content">
+            <div class="card">
+                <button class="btn btn-secondary" onclick="showContent('courses')">← 返回课程列表</button>
+                <h1>COMP0122 - MSc CGVI Project</h1>
+                <div class="markdown-content" data-markdown="content/courses/comp0122.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 留学经验页面 -->
+        <div id="preparation" class="content">
+            <div class="card">
+                <h1>行前准备</h1>
+                <div class="markdown-content" data-markdown="content/experience/preparation.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="arrival" class="content">
+            <div class="card">
+                <h1>落地置办</h1>
+                <div class="markdown-content" data-markdown="content/experience/arrival.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="shopping" class="content">
+            <div class="card">
+                <h1>购物指南</h1>
+                <div class="markdown-content" data-markdown="content/experience/shopping.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="dining" class="content">
+            <div class="card">
+                <h1>餐饮推荐</h1>
+                <div class="markdown-content" data-markdown="content/experience/dining.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="transport" class="content">
+            <div class="card">
+                <h1>交通出行</h1>
+                <div class="markdown-content" data-markdown="content/experience/transport.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="tourism" class="content">
+            <div class="card">
+                <h1>旅游景点</h1>
+                <div class="markdown-content" data-markdown="content/experience/tourism.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="safety" class="content">
+            <div class="card">
+                <h1>安全须知</h1>
+                <div class="markdown-content" data-markdown="content/experience/safety.md">
+                    <p>内容待补充...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 UCL MSc CGVI Knowledge Sharing Platform | Created by L.C.</p>
+            <p>本网站内容仅供参考，具体信息请以UCL官方为准</p>
+        </div>
+    </footer>
+
+    <!-- 引入外部JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

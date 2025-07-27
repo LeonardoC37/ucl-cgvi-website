@@ -8,7 +8,7 @@
 
 MSC CGVI	Faculty of Engineering Sciences	Department of Computer Science
 
-**Director**  Prof Tobias Ritschel （？25fall还是不是存疑）
+**Director**  Prof Tobias Ritschel （由于其职业变动，25fall应该会换成另一个教授，目前还不确定是谁）
 
 重要网站：Moodle，Timetable，Portico，CS Student Handbook，GitHub(上面有很多实验，但是质量参差不齐)
 
@@ -40,7 +40,7 @@ Gabriel Brostow
 
 2个CW各占10%，线上开卷考试占80%
 
-老师人很好（但是回消息非常慢），讲课很清楚，口语清晰，上课签到，会抽人回答问题，很活跃，课程难度从易到中（对于概率论基础较好的同学比较容易），尤其前半学期几乎全在讲概率论。主要在用11年的老书，和深度学习基本上没关系，所以基本上学不到什么有用到东西。实验课每周有不同的实验，有TA和老师可以随时问，难度一般不高，可以提前走。CW在所有CW里算容易的，就是对实验课进行扩展，给分也挺高（人均80+），考试是第三学期开学后，moodle quiz线上开卷(本来可以让用google后面又不让了,不过其实你用不用应该不太影响...)，一共3小时22个题，21个选择和1个问答，老师说会出AI confused的题目,确实,部分题目确实很confuse，我个人感觉是个人可能都会疑惑。
+老师人很好（但是回消息非常慢），讲课很清楚，口语清晰，上课签到，会抽人回答问题，很活跃，课程难度从易到中（对于概率论基础较好的同学比较容易），尤其前半学期几乎全在讲概率论。主要在用11年的老书，和深度学习基本上没关系，所以基本上学不到什么有用到东西。实验课每周有不同的实验，有TA和老师可以随时问，难度一般不高，可以提前走。CW在所有CW里算容易的，就是对实验课进行扩展，给分也挺高（人均80+），考试是第三学期开学后，moodle quiz线上开卷(本来可以让用google后面又不让了,不过其实你用不用应该不太影响...)，一共3小时22个题，21个选择和1个问答，老师说会出AI confused的题目,确实,部分题目确实很confuse，我个人感觉是个人可能都会疑惑。最后给分一般，不算高也不低吧。
 
 | Acdemic  year | Module code | Module name    | Mean  | 5th  | 25th | 75th | 95th |
 | ------------- | ----------- | -------------- | ----- | ---- | ---- | ---- | ---- |
@@ -72,11 +72,11 @@ Lourdes De Agapito Vicente
 
 [Computer Graphics](https://www.ucl.ac.uk/module-catalogue/modules/computer-graphics-COMP0027)
 
-Tobias Ritschel（25fall改成王鹤教授了？）
+Tobias Ritschel（25fall改成王鹤教授）
 
-本来是3个CW各占1/3，应该是听取了tobias的建议加了考试（估计是口语考试），现在是CW和考试各占50%
+本来是3个CW各占1/3，应该是听取了Tobias的建议加了考试（估计是口语考试），现在是CW和考试各占50%
 
-就24fall而言，3个CW，好像好几年没有变化了，可以在github上找到很多代码。第3个较难，不过每个CW都有一点坑，如果全用AI可能做不出正确结果。不过给分很高。tobias上课比较活跃，会时不时延伸，难度不低。实验课做CW，有助教可以问，tobias有时会站在你后面和你讨论或者随机提问。
+就24fall而言，3个CW，好像好几年没有变化了，可以在github上找到很多代码。第3个较难，不过每个CW都有一点坑，如果全用AI可能做不出正确结果。不过给分很高。Tobias上课比较活跃，会时不时延伸，难度不低。实验课做CW，有助教可以问，Tobias有时会站在你后面和你讨论或者随机提问。
 
 | Acdemic  year | Module code | Module name       | Mean  | 5th  | 25th | 75th | 95th |
 | ------------- | ----------- | ----------------- | ----- | ---- | ---- | ---- | ---- |
@@ -91,11 +91,11 @@ Tobias Ritschel（25fall改成王鹤教授了？）
 
 [Machine Learning for Visual Computing](https://www.ucl.ac.uk/module-catalogue/modules/machine-learning-for-visual-computing-COMP0169)
 
-Niloy Mitra，Tobias Ritschel（25fall好像也没有tobias了）
+Niloy Mitra，Tobias Ritschel（25fall也没有Tobias了）
 
 CW50%，口语考试50%
 
-就24fall而言，两个教授轮流上课，niloy口音比较重可能需要适应。课程覆盖面比较多，但是没有什么前沿的东西。CW非常长且很难，每年都有增减，评分也普遍不算高（就第一学期而言），最后口语考试（是23fall才开始有的，所以之前成绩偏高），安排在第一学期第10-11周，tobias的题目难度高，niloy难度低，不过变化比较多，且比较看运气。
+就24fall而言，两个教授轮流上课，Niloy口音比较重可能需要适应。课程覆盖面比较多，但是没有什么前沿的东西。CW非常长且很难，每年都有增减，评分也普遍不算高（就第一学期而言），最后口语考试（是23fall才开始有的，所以之前成绩偏高），安排在第一学期第10-11周，Tobias的题目难度高，Niloy难度低，不过变化比较多，且比较看运气。
 
 | Acdemic  year | Module code | Module name                            | Mean  | 5th  | 25th | 75th | 95th |
 | ------------- | ----------- | -------------------------------------- | ----- | ---- | ---- | ---- | ---- |
@@ -151,7 +151,7 @@ Gary Zhang
 
 50%CW，40%项目，10%小组pre
 
-本人没选，但是听说讲的东西比较专业，并且CW比较恶心。
+本人没选，但是听说讲的东西比较专业，并且CW比较恶心。最后从给分的角度看却还是一门不错的课程。
 
 | Acdemic  year | Module code | Module name                     | Mean  | 5th  | 25th | 75th | 95th |
 | ------------- | ----------- | ------------------------------- | ----- | ---- | ---- | ---- | ---- |
@@ -187,7 +187,7 @@ Ifat Yasin
 
 70%线下考试，30%CW
 
-本人没选，不过好像比较多，不过好像不算很难。
+本人没选，不过实验好像比较多，不过好像不算很难。但是考试是线下考试，并且出分后好像引起了公愤（大概是给分特别特别低大批量同学不及格），不过最后协商也没有结论。就不了了之了好像。
 
 | Acdemic  year | Module code | Module name                | Mean  | 5th  | 25th | 75th | 95th |
 | ------------- | ----------- | -------------------------- | ----- | ---- | ---- | ---- | ---- |
@@ -211,7 +211,7 @@ Robot Vision and Navigation
 
 [Auditory Computing](https://www.ucl.ac.uk/module-catalogue/modules/auditory-computing-COMP0161)
 
-周围没什么人选，不了解。
+周围没什么人选，不了解。不过听说给分也不是很好。
 
 | Acdemic  year | Module code | Module name        | Mean  | 5th  | 25th | 75th | 95th |
 | ------------- | ----------- | ------------------ | ----- | ---- | ---- | ---- | ---- |
@@ -227,4 +227,92 @@ Robot Vision and Navigation
 
  [MSc Computer Graphics Vision and Imaging Project](https://www.ucl.ac.uk/module-catalogue/modules/msc-computer-graphics-vision-and-imaging-project-COMP0122)
 
-Thesis，从第一学期末就开始选导师（自己发邮件联系，部分导师会有考核meet或者选拔），有一个列表的老师可选（如下，排名不分先后），最晚应该是3-4月份确定，论文提交为9月份，可选答辩。
+Thesis，从第一学期末就开始选导师（自己发邮件联系，部分导师会有考核meet或者选拔），有一个列表的老师可选（如下，排名不分先后），最晚应该是3-4月份确定，论文提交为9月份，可选是否参加答辩。评分标准是100%论文，不会关注你的任何过程文档。
+
+## 毕业设计导师列表
+
+### 计算机视觉方向
+
+**王鹤 (He Wang)**
+- **研究方向**：计算机图形学、视觉和机器学习交叉领域
+- **特点**：随和友善，可中文交流，对中国学生友好
+- **个人网站**：drhewang.com
+
+**Gabriel Brostow**
+- **研究方向**：VQA、APP、电影和照片特效、动作分析、创作系统
+- **特点**：需要通过选拔，回复较慢但项目质量高
+- **个人网站**：cs.ucl.ac.uk/staff/g.brostow/
+
+**Lourdes De Agapito**
+- **研究方向**：3D视觉、重构、多视角几何
+- **特点**：有一定要求，会进行面试评估
+- **个人网站**：cs.ucl.ac.uk/staff/L.Agapito/
+
+### 几何处理与3D方向
+
+**Niloy Mitra**
+- **研究方向**：形状分析、数据驱动的几何处理、计算制造
+- **特点**：要求较高，比较push，适合有研究志向的学生
+- **个人网站**：cs.ucl.ac.uk/staff/N.Mitra/
+
+### 医学成像方向
+
+**Gary Zhang**
+- **研究方向**：医学成像、医学图像分析、计算建模和机器学习
+- **个人网站**：profiles.ucl.ac.uk/11821-gary-zhang/
+
+**Simon Arridge**
+- **研究方向**：医学成像中的逆问题、断层扫描
+- **特点**：人很好，学术严谨
+- **个人网站**：cip.cs.ucl.ac.uk/staff/simon_arridge/
+
+**Danail Stoyanov**
+- **研究方向**：医学图像计算、手术机器人、医疗AI
+- **个人网站**：profiles.ucl.ac.uk/32290
+
+**Francisco Vasconcelos**
+- **研究方向**：AI和计算机视觉在医疗和手术数据分析中的应用
+- **专业领域**：3D重建、传感器定位、运动估计、几何视觉建模
+- **个人网站**：ucl.ac.uk/surgical-robot-vision/francisco-vasconcelos
+
+**Marta Betcke**
+- **研究方向**：反演问题、断层扫描图像重建、X射线成像
+- **个人网站**：cip.cs.ucl.ac.uk/staff/marta_betcke/
+
+**Daniel Alexander**
+- **研究方向**：医学图像计算、神经成像
+- **个人网站**：profiles.ucl.ac.uk/3589-daniel-alexander
+
+**Kris Thielemans**
+- **研究方向**：科学计算和改进医学成像的量化
+- **个人网站**：profiles.ucl.ac.uk/39189-kris-thielemans/
+
+### 虚拟现实与增强现实方向
+
+**Anthony Steed**
+- **研究方向**：VR、AR、新颖交互形式、大规模图形模型
+- **特点**：VE项目导师，项目比较有趣
+- **个人网站**：wp.cs.ucl.ac.uk/anthonysteed/
+
+**Kaan Aksit**
+- **研究方向**：VR/AR计算显示、计算成像、感知图形、光学计算
+- **特点**：要求很高，比较push，非常不推荐！
+- **个人网站**：kaanaksit.com
+
+**Simon Julier**
+- **研究方向**：AR、机器人技术、分布式数据融合、多目标跟踪
+- **专业领域**：SLAM（同时定位与建图）、非线性估计、目标识别
+- **个人网站**：profiles.ucl.ac.uk/2907-simon-julier/
+
+**Ifat Yasin**
+- **研究方向**：VR中的听觉感知和音频技术
+
+### 数学与优化方向
+
+**Martin Benning**
+- **研究方向**：逆问题和不适定问题的理论和计算方面、光流、优化算法
+- **个人网站**：profiles.ucl.ac.uk/95169-martin-benning
+
+---
+
+*如有问题，欢迎联系作者：leocheng3777@gmail.com*

@@ -946,8 +946,11 @@ footer {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
         padding: 2rem 0;
+        z-index: 999;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
     }
 
     .nav-menu.active {
@@ -964,38 +967,195 @@ footer {
         visibility: visible;
         transform: none;
         margin-top: 0.5rem;
+        background: var(--bg-light);
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .dropdown-item {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
     }
 
     .mobile-menu-toggle {
         display: block;
     }
 
-    .hero h1, .glitch {
-        font-size: 2rem;
+    .hero {
+        padding: 2rem 0;
     }
 
-    .hero p {
+    .hero h1, .glitch, .main-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero p, .hero-subtitle {
         font-size: 1rem;
+    }
+
+    .hero-subtitle-cn {
+        font-size: 0.9rem;
     }
 
     main {
         padding-top: 80px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .teacher-grid, .course-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .course-card {
+        padding: 1rem;
+    }
+
+    .teacher-card {
+        padding: 1rem;
     }
 
     .author-info {
         flex-direction: column;
         text-align: center;
+        gap: 1rem;
+    }
+
+    .author-avatar {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
     }
 
     .stats-container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .stat-item {
+        padding: 1rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
     }
 
     .feature-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .feature-item {
+        padding: 1rem;
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+    }
+
+    .quick-nav {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .contact-methods {
+        padding: 1rem;
+    }
+
+    /* 修复移动端滚动问题 */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* 优化移动端触摸交互 */
+    .course-card, .teacher-card, .btn {
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
+    }
+
+    /* 移动端表格优化 */
+    table {
+        font-size: 0.8rem;
+    }
+
+    th, td {
+        padding: 0.5rem;
+    }
+}
+
+/* 平板适配 */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .teacher-grid, .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quick-nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+/* 小屏幕优化 */
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 0.75rem 1rem;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .hero h1, .main-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .hero-subtitle-cn {
+        font-size: 0.8rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-number {
+        font-size: 1.75rem;
+    }
+
+    .feature-icon {
+        font-size: 1.75rem;
+    }
+
+    .btn {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.85rem;
     }
 }

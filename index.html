@@ -155,13 +155,9 @@
                         <div class="contact-methods">
                             <h3>联系方式</h3>
                             <ul>
-                            <li>邮箱：<a href="mailto:leocheng3777@gmail.com" class="email-link">leocheng3777@gmail.com</a></li>
+                            <li>邮箱：leocheng3777@gmail.com</li>
                             <li>微信：Leonaro_Cheng37</li>
                             </ul>
-                            <button class="btn btn-glow" onclick="openContactModal()" style="margin-top: 1rem;">
-                                <span class="btn-icon">📧</span>
-                                快速联系
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -632,50 +628,6 @@
             <p>本网站内容仅供参考，具体信息请以UCL官方为准</p>
         </div>
     </footer>
-
-    <!-- 全局联系按钮 -->
-    <div class="floating-contact-btn" onclick="openContactModal()">
-        <span class="contact-icon">📧</span>
-    </div>
-
-    <!-- 联系弹窗 -->
-    <div id="contactModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>联系作者</h2>
-                <span class="close" onclick="closeContactModal()">&times;</span>
-            </div>
-            <div class="modal-body">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="contact-label">📧 邮箱：</span>
-                        <a href="mailto:leocheng3777@gmail.com" class="email-link">leocheng3777@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">💬 微信：</span>
-                        <span>Leonaro_Cheng37</span>
-                    </div>
-                </div>
-                <div class="quick-contact">
-                    <h3>快速发送邮件</h3>
-                    <form action="mailto:leocheng3777@gmail.com" method="post" enctype="text/plain">
-                        <div class="form-group">
-                            <label for="subject">主题：</label>
-                            <input type="text" id="subject" name="subject" placeholder="请输入邮件主题" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">内容：</label>
-                            <textarea id="message" name="body" rows="5" placeholder="请输入您想说的话..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-glow">
-                            <span class="btn-icon">📤</span>
-                            发送邮件
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- 引入外部JS -->
     <script src="js/main.js"></script>

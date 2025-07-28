@@ -1,6 +1,6 @@
 # 项目设置和部分课程、老师评价
 
-<center>L.C. 2025.4</center>
+<center>L.C. 2025.7更新</center>
 
 
 

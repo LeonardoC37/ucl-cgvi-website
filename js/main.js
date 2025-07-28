@@ -365,13 +365,46 @@ function init() {
     
     // 创建粒子效果
     createParticles();
+    
+    // 设置联系弹窗
+    setupModalClickOutside();
 }
 
 // ===== 页面加载完成后初始化 =====
 document.addEventListener('DOMContentLoaded', init);
+
+// ===== 联系弹窗功能 =====
+function openContactModal() {
+    const modal = document.getElementById('contactModal');
+    modal.style.display = 'block';
+    
+    // 防止背景滚动
+    document.body.style.overflow = 'hidden';
+}
+
+function closeContactModal() {
+    const modal = document.getElementById('contactModal');
+    modal.style.display = 'none';
+    
+    // 恢复背景滚动
+    document.body.style.overflow = 'auto';
+}
+
+// 点击弹窗外部关闭
+function setupModalClickOutside() {
+    const modal = document.getElementById('contactModal');
+    
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            closeContactModal();
+        }
+    });
+}
 
 // ===== 导出函数供HTML使用 =====
 window.showContent = showContent;
 window.toggleMobileMenu = toggleMobileMenu;
 window.loadCourseContent = loadCourseContent;
 window.loadExperienceContent = loadExperienceContent;
+window.openContactModal = openContactModal;
+window.closeContactModal = closeContactModal;
